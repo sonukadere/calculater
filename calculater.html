@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>culculater</title>
+    <link rel="stylesheet" href="calculater.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        document.getElementById('display').innerHTML='0';
+    </script>
+   
+        
+</head>
+<body>
+    <div class="calculater">
+     <div id="display">0</div>
+       <div class="keys">
+        <button class="key"id ="Ac" onclick="cleardisplay()">Ac</button>
+        <button class="key"  id ="parenthises"onclick="appenddisplay('( )')">( )</button>
+        <button class="key" id ="persentag" onclick="appenddisplay('%')">%</button>
+        <button class="key" onclick="appenddisplay('/')"><i class="fa-solid fa-divide"></i></button>
+        <button class="key" onclick="appenddisplay('7')">7</button>
+        <button class="key" onclick="appenddisplay('8')">8</button>
+        <button class="key" onclick="appenddisplay('9')">9</button>
+        <button class="key" onclick="appenddisplay('*')"><i class="fa-solid fa-xmark"></i></button>
+        <button class="key" onclick="appenddisplay('4')">4</button>
+        <button class="key" onclick="appenddisplay('5')">5</button>
+        <button class="key" onclick="appenddisplay('6')">6</button>
+        <button class="key" onclick="appenddisplay('-')">-</button>
+        <button class="key" onclick="appenddisplay('1')">1</button>
+        <button class="key" onclick="appenddisplay('2')">2</button>
+        <button class="key" onclick="appenddisplay('3')">3</button>
+        <button class="key" onclick="appenddisplay('+')">+</button>
+        <button class="key" onclick="appenddisplay('0')">0</button>
+        <button class="key" onclick="appenddisplay('.')">.</button>
+        <button class="key" onclick="deleteLast('x')"><i class="fa-solid fa-rectangle-xmark"></i></button>
+        <button class="key" onclick="calculate('=')">=</button>
+       </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
